@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Price Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bitcoin Price Predictor</h1>
+        <form action="/predict" method="post">
+            <label for="previous_close">Previous Close:</label>
+            <input type="number" step="0.01" id="previous_close" name="previous_close" required>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
